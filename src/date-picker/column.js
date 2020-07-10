@@ -1,4 +1,4 @@
-import WheelPicker from "../wheel-picker.android";
+import WheelPicker from "../wheel-picker";
 import React from "react";
 
 export const titles = array => array.map(item => item.title);
@@ -8,8 +8,7 @@ export default ({ list, ...props }) => (
         data={titles(list)}
         isAtmospheric
         isCurved
-        {...props}
-        itemTextSize={180}
+        itemTextSize={60}
         itemTextFontFamily="Roboto-Bold"
         backgroundColor="white"
         minuteInterval={15}
@@ -18,5 +17,7 @@ export default ({ list, ...props }) => (
         visibleItemCount={3}
         //renderIndicator={true}
         indicatorColor="#B9CA00"
+        allowFontScaling = {true}
+        {...props}
     />
 );

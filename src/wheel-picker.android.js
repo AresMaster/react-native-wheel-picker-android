@@ -3,7 +3,7 @@
  * @flow
  * */
 
-import React from "react"
+import React, { Component } from "react"
 import { requireNativeComponent, PixelRatio } from "react-native"
 
 // eslint-disable-next-line no-use-before-define
@@ -34,7 +34,7 @@ type Props = {
 
 type State = { selectedItemPosition: number }
 
-class WheelPicker extends React.Component<Props, State> {
+class WheelPicker extends Component<Props, State> {
     state = {
         selectedItemPosition: 0
     }
