@@ -1,6 +1,6 @@
 import React from 'react'
-import { requireNativeComponent, PickerIOS, Picker, Text } from 'react-native';
-
+import { requireNativeComponent, Text } from 'react-native';
+import { Picker } from '@react-native-community/picker';
 type Props = {
     data: Array<string>,
     selectedItem?: number,
@@ -52,4 +52,4 @@ export default class WheelPicker extends React.Component<Props, State> {
             </Picker>
         )
     }
-} 
+}
