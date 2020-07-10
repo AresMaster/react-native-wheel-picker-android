@@ -35,7 +35,8 @@
         "moment": "^2.22.2",
         "prop-types": "^15.6.2",
         "react": ">=16.4.2",
-        "react-native": ">=0.55.4"
+        "react-native": ">=0.55.4",
+        "@react-native-community/picker":"1.0.0"
     },
     "devDependencies": {
         "@textpress/eslint-config-textpress": "^0.4.0",
