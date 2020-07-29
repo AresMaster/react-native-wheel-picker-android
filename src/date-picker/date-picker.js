@@ -103,7 +103,7 @@ export default class DatePicker extends PureComponent {
             date.setFullYear(change.year, change.month, change.date);
         }
 
-        if (change.hours || change.minutes) {
+        if (change.hours >= 0 || change.minutes >= 0) {
             date.setHours(change.hours);
             date.setMinutes(change.minutes);
             date.setSeconds(0);
